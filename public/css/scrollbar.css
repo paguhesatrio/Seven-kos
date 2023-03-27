@@ -1,0 +1,19 @@
+:root {
+    --pr-color: #048853;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+}
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #06b66f;
+    border-radius: .3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--pr-color);
+}

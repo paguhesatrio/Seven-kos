@@ -1,0 +1,532 @@
+/* ==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 250;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+
+
+/*==================== BASE ====================*/
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+/*==================== LAYOUT ====================*/
+/* 
+.header .nav__menu ul{
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+} */
+
+/* .header .container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+} */
+
+/* .header .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.header .nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+.header .nav__logo,
+.header .nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.header .nav__logo:hover {
+  color: var(--first-color);
+}
+
+.header .nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header .nav__toggle:hover {
+  color: var(--first-color);
+}
+
+
+@media screen and (max-width: 320px) {
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  .navbar{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .header .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .nav {
+      display: none;
+  }
+}
+
+.header .nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.header .nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.header .nav__link:hover {
+  color: var(--first-color);
+}
+
+.header .nav__icon {
+  font-size: 1.2rem;
+}
+
+.header .nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+} */
+
+/* .header .nav__close:hover {
+  color: var(--first-color-alt);
+} */
+
+/* show menu */
+/* .header .show-menu {
+  bottom: 0;
+} */
+
+/* Active link */
+/* .header .active-link {
+  color: var(--first-color);
+} */
+/* show menu */
+
+
+/* Active link */
+
+
+/* Change background header */
+
+
+/*==================== HOME ====================*/
+
+
+/*==================== BUTTONS ====================*/
+
+
+/*==================== ABOUT ====================*/
+
+
+/*==================== SKILLS ====================*/
+
+
+/*==================== QUALIFICATION ====================*/
+
+
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ====================*/
+
+
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== CONTACT ME ====================*/
+
+
+/*==================== FOOTER ====================*/
+
+
+/*========== SCROLL UP ==========*/
+
+
+/* Show scroll */
+
+
+/*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.background {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(15, 143, 83) 0%, rgb(100, 247, 112) 100%);
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-background {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background .flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
