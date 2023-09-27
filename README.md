@@ -12,7 +12,7 @@ Waktu Pengerjaan dari tanggal 27 July - 27 September
 ![App Screenshot](./img/Diagram.png/)
 
 - Use Case Diagram
-![App Screenshot](./img/use.png/)
+![App Screenshot](./img/Use.png/)
 
 ## User
 
