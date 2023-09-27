@@ -1,69 +1,63 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Seven Kos
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Seven Kos adalah Project kerja praktek penyewaan kos-kosan dengan Website Dibuat dengan Framework Laravel dengan Bahasa PHP
+
+## Waktu Pengerjaan
+
+Waktu Pengerjaan dari tanggal 27 July - 27 September
+
+## Diagram
+
+- Diagram Class
+![App Screenshot](./img/Diagram.png/)
+
+- Use Case Diagram
+![App Screenshot](./img/use.png/)
+
+## User
+
+Pada sistem penyewaan kos kosan web memiliki 4 hak akses yaitu:
+- Super Admin
+- Admin
+- Pemilik Kos
+- Pencari Kos
+
+## Tampilan
+
+#### Halaman Awal
+![App Screenshot](./img/home.png/)
+
+#### Halaman Login
+![App Screenshot](./img/login.png/)
+
+#### Halaman Dashboard
+![App Screenshot](./img/dash.png/)
 
 
-## Web Koskosan
+## Penggunaan API
 
-Web Penyewaan Kos-kosan dengen larevel 8
+- [Midtrans](https://midtrans.com/)
 
-## About Laravel
+- [Indoregion](https://github.com/azishapidin/indoregion)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Kekurangan
+- Pemilik Kos Ataupun Pencari Kos Tidak dapat Mengedit Profil
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Jika Di satu kos terdapat jenis kamar yang berbeda maka Pemilik Kos harus membuat Kos baru Lagi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Dalam mencari kos belum bisa mencari secara detail (Filter) 
 
-## Learning Laravel
+- Pembayaran yang tersambung ke midtrans, jika pembayaran berhasil status pemesanan tidak berubah otomatis
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Ketika Admin Ingin memberikan Info ke User belum Otomatis 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Authors
 
-## Laravel Sponsors
+- [@PaguhEsatrio](https://github.com/PaguhEsatrio)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- [@valentianoaudy](https://github.com/valentianoaudy)
 
-### Premium Partners
+## Thanks To
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![Logo](https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-banner-pic/1bb9628c17af0a3bcf82338cdab1e074.jpeg)
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
