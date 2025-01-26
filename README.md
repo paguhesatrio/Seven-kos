@@ -59,5 +59,5 @@ Pada sistem penyewaan kos kosan web memiliki 4 hak akses yaitu:
 
 ## Thanks To
 
-![Logo](https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-banner-pic/1bb9628c17af0a3bcf82338cdab1e074.jpeg)
+![Logo](https://media.licdn.com/dms/image/v2/C560BAQGyTlT3cNArqA/company-logo_200_200/company-logo_200_200/0/1630647806765?e=2147483647&v=beta&t=-4MLBy1LU9-CfBHUY8t96E-bfh044bgUk7Abj-HS8KM)
 
